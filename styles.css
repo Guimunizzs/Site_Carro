@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -45,6 +46,15 @@ section {
   position: relative;
 }
 
+.list::before {
+  content: "";
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  top: 50%;
+  border-top: 1px solid #fff;
+}
+
 .item {
   position: absolute;
   inset: 0;
@@ -69,7 +79,7 @@ section {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
   align-items: end;
   gap: 20px;
 }
@@ -81,6 +91,7 @@ section {
 .content h2 {
   font-size: 8em;
   line-height: 1em;
+  font-family: "League Gothic", sans-serif;
 }
 
 .content .description {
@@ -100,6 +111,7 @@ section {
   color: black;
   cursor: pointer;
   font-weight: bold;
+  font-family: "League Gothic", sans-serif;
 }
 
 section .indicators {
@@ -117,6 +129,7 @@ section .indicators {
 
 section .indicators .number {
   font-size: 5em;
+  font-family: "League Gothic", sans-serif;
 }
 
 section .indicators ul {
@@ -145,6 +158,24 @@ section .indicators .active {
   display: flex;
   justify-content: space-between;
 }
+
+.button-left {
+  transform: scale(-1);
+}
+
+.arrows button {
+  top: 60%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
 .arrows button img {
-  width: 100px;
+  width: 30px;
+  margin-top: 4px;
+}
+
+.arrows button:hover {
+  background-color: #beff1b;
 }
